@@ -1,0 +1,116 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e2f;
+    margin: 0;
+    color: #e0e0e0;
+}
+
+
+.container {
+    width: 350px;
+    padding: 25px;
+    background-color: #2b2b3d;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 1.8em;
+    color: #e570ff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #c2c2dd;
+    margin-bottom: 5px;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%; /* Full width inside container */
+    padding: 10px;
+    background-color: #3d3d5c;
+    border: 1px solid #6a67ce;
+    border-radius: 6px;
+    color: #e0e0e0;
+    outline: none;
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #e570ff;
+    box-shadow: 0px 0px 8px rgba(229, 112, 255, 0.5);
+}
+
+.form-group input[type="checkbox"] {
+    width: auto;
+    accent-color: #e570ff;
+    margin-right: 5px;
+}
+
+
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    color: #e0e0e0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px; /* Space above button */
+}
+
+.form-group button:hover {
+    background-color: #45a049;
+    transform: scale(1.03);
+}
+
+.error {
+    color: #ff6f7d;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.welcome {
+    font-size: 1.1em;
+    color: #f3b6ff;
+    margin-bottom: 20px;
+}
+
+.logout {
+    display: block;
+    margin-top: 15px;
+    color: #77aaff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logout:hover {
+    color: #b6d4ff;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
